@@ -5,7 +5,7 @@ const csvStringify = require('csv-stringify')
 
 const types =   {
   'text/csv': {
-    parser(): () => csvParse({columns: true}),
+    parser: () => csvParse({columns: true}),
     serializer: () => csvStringify({ header: true})
   },
   'application/json': {
