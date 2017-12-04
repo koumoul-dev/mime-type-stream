@@ -14,13 +14,12 @@ npm install --save mime-type-stream
 ```
 
 ```
-const mimeTypeStream = require('..')
+const mimeTypeStream = require('mime-type-stream')
 const fs = require('fs')
 
 fs.createReadStream('/path/to/file.ndjson')
-  .pipe(mimeTypeStream('application/x-ndjson').parser)
+  .pipe(mimeTypeStream('application/x-ndjson').parser())
   // Manipulate a stream of JSON objects here
-  .pipe(mimeTypeStream('text/csv').serializer)
+  .pipe(mimeTypeStream('text/csv').serializer())
   .pipe(fs.createWriteStream('/path/to/file.csv'))
-
 ```

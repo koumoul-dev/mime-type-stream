@@ -5,16 +5,16 @@ const csvStringify = require('csv-stringify')
 
 const types =   {
   'text/csv': {
-    parser: csvParse(),
-    serializer: csvStringify({ header: true})
+    parser: csvParse,
+    serializer: () => csvStringify({ header: true})
   },
   'application/json': {
-    parser: JSONStream.parse('*'),
-    serializer: JSONStream.stringify()
+    parser: () => JSONStream.parse('*'),
+    serializer: JSONStream.stringify
   },
   'application/x-ndjson': {
-    parser: ndjson.parse(),
-    serializer: ndjson.serialize()
+    parser: ndjson.parse,
+    serializer: ndjson.serialize
   }
 }
 
