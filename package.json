@@ -1,6 +1,6 @@
 {
   "name": "mime-type-stream",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Streaming parser + serializer for various mime-types",
   "main": "index.js",
   "scripts": {
