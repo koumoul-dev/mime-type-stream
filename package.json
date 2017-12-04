@@ -1,0 +1,25 @@
+{
+  "name": "mime-type-stream",
+  "version": "0.0.0",
+  "description": "Streaming parser + serializer for various mime-types",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koumoul-dev/mime-type-stream.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koumoul-dev/mime-type-stream/issues"
+  },
+  "homepage": "https://github.com/koumoul-dev/mime-type-stream#readme",
+  "dependencies": {
+    "JSONStream": "^1.3.1",
+    "csv-parse": "^2.0.0",
+    "csv-stringify": "^2.0.0",
+    "ndjson": "^1.5.0"
+  }
+}
